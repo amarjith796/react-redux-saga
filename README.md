@@ -1,2 +1,2 @@
 # react-redux-saga
-React App example with Redux-saga
+React App example with React, Redux, Redux-saga, React-hooks
