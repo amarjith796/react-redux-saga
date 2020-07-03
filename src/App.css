@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+nav{
+  width: 100%;
+  margin: auto;
+  background: burlywood;
+  padding: 1px;
+}
+
+ul{
+  display: flex;
+}
+ul.headerlist li{
+  height: 30px;
+}
+.userslist{
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+li{
+  margin: auto;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.show{
+  visibility: visible;
+}
+
+.hidden{
+  visibility: hidden;
+}
+.nav ul li:last-child{
+  position: absolute;
+  right: 10%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.userslist li{
+  display: flex;
+  padding: 15px 0px 10px 0px;
+  cursor: pointer;
+}
+.userslist li:hover{
+  background-color: gray;
+}
+.userslist li:active{
+  background-color: gray;
+}
+.userslist li:last-child{
+  border: 0 !important;
+}
+.userslist li p{
+  position: absolute;
+  left: 120px;
+  text-transform: capitalize;
+}
+.headerlist li a{
+  color: black;
+}
