@@ -4,8 +4,10 @@ import ViewUserComponent from './viewuser.component';
 class UsersListComponent extends Component {
 
     componentDidMount() {
-        const { fetchusers } = this.props;
-        fetchusers(5);
+        const { fetchusers,users } = this.props;
+        if(!users.users.length){
+            fetchusers(5);
+        }
     }
 
     render() {

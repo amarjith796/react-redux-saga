@@ -3,7 +3,7 @@ import React, {useEffect,useState} from 'react';
 import {NavLink} from 'react-router-dom';
 
 const HeaderComponent = (props) =>{
-    
+        
     const calculateDateTime = () => {
         let date = new Date();        
         return (date.toLocaleDateString() + ' ' + date.toLocaleTimeString());
