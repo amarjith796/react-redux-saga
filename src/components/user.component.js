@@ -1,6 +1,7 @@
 import React from 'react';
 
 const UsersComponent = (props) =>{
+    console.log("asdasdas");
     const {username} = props;
     return(
         <div>
